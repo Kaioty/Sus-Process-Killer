@@ -1,3 +1,5 @@
+Write-Host "Starting svcKiller.ps1..."
+
 # Get all svchost.exe processes
 $svchostProcesses = Get-WmiObject Win32_Process | Where-Object { $_.Name -eq "svchost.exe" }
 
